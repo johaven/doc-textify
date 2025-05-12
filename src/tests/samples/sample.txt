@@ -1,0 +1,2 @@
+Hello from sample.txt
+Lorem ipsum

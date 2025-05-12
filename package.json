@@ -1,0 +1,66 @@
+{
+  "name": "doc-textify",
+  "version": "1.0.0",
+  "author": "Johan Legrand <johan.legrand@sync-in.com>",
+  "license": "MIT",
+  "description": "A Node.js library to extract text from office documents (docx, pptx, xlsx, odt, odp, ods, pdf, text, html ...)",
+  "homepage": "https://github.com/johaven/doc-textify#readme",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johaven/doc-textify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/johaven/doc-textify/issues"
+  },
+  "bin": {
+    "doc-textify": "dist/cli.js"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "postbuild": "chmod +x dist/cli.js",
+    "prepare": "npm run build",
+    "test": "node src/tests/test.cjs",
+    "prepublishOnly": "npm test"
+  },
+  "dependencies": {
+    "html-to-text": "^9.0.5",
+    "pdfjs-dist": "^5.2.133",
+    "sax": "^1.4.1",
+    "yauzl": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/html-to-text": "^9.0.4",
+    "@types/node": "^22.15.17",
+    "@types/sax": "^1.2.7",
+    "@types/yauzl": "^2.10.3",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [
+    "office",
+    "docx",
+    "pptx",
+    "xlsx",
+    "odt",
+    "odp",
+    "ods",
+    "pdf",
+    "txt",
+    "html",
+    "text",
+    "document",
+    "word",
+    "excel",
+    "worksheet",
+    "powerpoint",
+    "slides",
+    "parser",
+    "extract text",
+    "parse text",
+    "textract",
+    "extractor"
+  ]
+}
