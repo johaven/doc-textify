@@ -1,3 +1,5 @@
+[![npm version](https://img.shields.io/npm/v/doc-textify.svg)](https://www.npmjs.com/package/doc-textify)
+
 # Doc-Textify
 
 **Doc-Textify** is a TypeScript library and command-line tool that extracts and cleans text from various document formats. 
