@@ -1,6 +1,6 @@
 {
   "name": "doc-textify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Johan Legrand <johan.legrand@sync-in.com>",
   "license": "MIT",
   "description": "A Node.js library to extract text from office documents (docx, pptx, xlsx, odt, odp, ods, pdf, text, html ...)",
