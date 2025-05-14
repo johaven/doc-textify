@@ -19,12 +19,14 @@
     "doc-textify": "dist/cli.js"
   },
   "scripts": {
-    "prebuild": "rm -rf dist",
-    "build": "tsc",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc && cp README.md LICENSE package.json dist/ && npm run release:package",
     "postbuild": "chmod +x dist/cli.js",
     "prepare": "npm run build",
     "test": "node src/tests/test.cjs",
-    "prepublishOnly": "npm test"
+    "release": "npm run build && npm run test && npm publish ./dist",
+    "release:dry-run": "npm run release -- --dry-run",
+    "release:package": "node scripts/releasePackageJson.js"
   },
   "dependencies": {
     "html-to-text": "^9.0.5",
